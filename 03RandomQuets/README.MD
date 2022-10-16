@@ -17,6 +17,7 @@ We are human and sometime We only need some good words . This quote Generator wi
 * html
 * css
 * javascript
+- API Used   - https://api.quotable.io/random
 
 ## How to Run?
 

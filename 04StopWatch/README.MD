@@ -4,7 +4,7 @@ A simple stop watch to track time.
 
 ## Why use it?
 
-keeping Record of your Tasks will help you to stay productive as well as Complete task on time.
+keeping Time Record of your Tasks will help you to stay productive as well as Complete task on time.
 This stop watch will help you with that.
 
 
@@ -25,7 +25,7 @@ This stop watch will help you with that.
 To run my application you simply need to clone the project and run the html file.
 
 ## DesktopView
-![Stop Watch](/)
+![Stop Watch](/04StopWatch/Assets/StopWatch.gif)
 
 
 Contributing

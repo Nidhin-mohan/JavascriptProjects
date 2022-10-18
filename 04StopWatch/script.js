@@ -15,6 +15,7 @@ let millisecs = document.getElementById("msec");
    let secs = 0;
   let msecs = 0;
   let count = 0;
+  let interval;             
 
 
 start.addEventListener("click", function () {
@@ -24,6 +25,7 @@ start.addEventListener("click", function () {
 
 stop.addEventListener("click", function () {
   timer = false;
+   clearInterval(interval); // clear interval
 });
 
 reset.addEventListener("click", function () {
@@ -33,36 +35,36 @@ reset.addEventListener("click", function () {
   secs = 0;
   msecs = 0;
   count = 0;
-  minutes.innerHTML = "00";
+   minutes.innerText = "00";
   secounds.innerHTML = "00";
   millisecs.innerHTML = "00";
+   clearInterval(interval); // clear interval
  
 });
 
 function stopWatch() {
-  if(timer) {
-    count++
-    if(count == 1000){
-      msecs++;
-      count=0;
-      if(msecs == 100){
-        secs++;
-        msecs= 0;
-        if (secs == 60) {
-          minute++;
-          secs = 0;
-          if (minute == 60) {
-            hour++;
-            minute = 0;
-          }
+  if (timer) {
+    msecs++;
+
+    if (msecs == 99) {
+      secs++;
+      msecs = 0;
+      if (secs == 60) {
+        minute++;
+        secs = 0;
+        if (minute == 60) {
+          hour++;
+          minute = 0;
         }
       }
     }
   }
-   millisecs.innerText = msecs;
-   secounds.innerText = secs;
-   minutes.innerText = minute;
-  setInterval(stopWatch,100)
+  millisecs.innerText =  msecs < 10 ?  '0'+ msecs : msecs;
+  secounds.innerText =  secs < 10 ? '0' + secs : secs;
+  minutes.innerText =  minute < 10 ? '0' + minute : minute;
+  clearInterval(interval); // clear interval
+  interval = setInterval(stopWatch, 10);
+
 }
 
 

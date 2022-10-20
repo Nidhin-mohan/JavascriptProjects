@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+  
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/05CountDown/Assets/pexels-eberhard-grossgasteiger-2098428.jpg);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.display{
+    padding: 50px 200px;
+}
+h2{
+    font-size: 70px ;
+     margin-top: 00px;
+}
+h1{
+    font-size: 50px;
+    margin-top: 100px;
+   
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: black;
+    display:inline-block;
+    border: none;
+    margin: 0 5px;
+}
+
+label{
+    color: #ABAAB0;
+    font-size: 25px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: #000;
+    border: none;
+}

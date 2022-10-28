@@ -12,6 +12,7 @@ body{
     justify-content: center;
     height: 100vh;
     background-image: url(/05CountDown/Assets/pexels-eberhard-grossgasteiger-2098428.jpg);
+    background-color: #000;
 }
 
 .container{

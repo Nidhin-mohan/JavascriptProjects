@@ -4,20 +4,24 @@ let month;
 let day;
 
 let btn = document.getElementById("btn")
+function myFunction() {
+  let person = prompt("Please enter a date ", "2022-12-01");
+ 
+}
+myFunction();
 
-
-btn.addEventListener(() => {
-  year = document.getElementById("year").value;
- month = document.getElementById("month").value;
-   day = document.getElementById("day").value;
-})
+// btn.addEventListener(() => {
+//   year = document.getElementById("year").value;
+//  month = document.getElementById("month").value;
+//    day = document.getElementById("day").value;
+// })
 
 // `"${year}-${month}-${day} "`
  setInterval(() => {
    // current date
    let today = new Date();
 
-   let endDate = new Date(2022-2-27);
+   let endDate = new Date(person);
    let TimeLeft = endDate - today;
 
    // console.log(endDate.getTime());

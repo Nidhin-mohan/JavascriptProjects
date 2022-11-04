@@ -1,0 +1,31 @@
+body{
+    color: #fff;
+    background-color: #000000;
+}
+#text{
+    width: 600px;
+    height: 200px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+   background-color: #1f1f1f;
+   text-align: center;
+   border: white 1px solid;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 50px;
+}
+#btn {
+    background-color:#2827CC;
+    color: #fff;
+    padding: 10px 20px ;
+    margin-top: 20px;
+    border: none;
+    border-radius: 9px;
+}

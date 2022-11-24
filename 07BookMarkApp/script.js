@@ -4,11 +4,17 @@ const add = document .getElementById("add")
  const element = document.getElementById("bookmarks");
 let deletebtn = document.querySelector("  .delete");
 
+
+
+
+
+
+
 add.addEventListener("click", () => {
 
     let name = namebox.value;
     let web = webbox.value;
-let deletebtn = document.querySelector("  .delete");
+
 
     if(name!== ""  && web!== ""){
       // a tag
@@ -24,6 +30,8 @@ let deletebtn = document.querySelector("  .delete");
 
       btns.appendChild(btntxt);
       btns.classList.add("delete");
+      
+      btns.onclick =  deletebk(this) ;
 
       // div
 
@@ -37,20 +45,25 @@ let deletebtn = document.querySelector("  .delete");
 
       namebox.value = "";
       webbox    .value = "";
+
+       
     }
    else{
     alert("please enter valid entry")
    }
 
-
- 
-
 })
 
+// delte bookmark
 
-  deletebtn.addEventListener("click", () => {
-    console.log("delete");
-  });
+const deletebk = (e) => {
+ 
+  console.log("e", e)
+  console.log(e.parentElement);
+
+}
+
+
 
 
 
